@@ -16,7 +16,7 @@
    version="1.1"
    id="svg881"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="during.svg"
+   sodipodi:docname="2 - during.svg"
    inkscape:export-filename="/home/Robin/bitmap.png"
    inkscape:export-xdpi="62.02"
    inkscape:export-ydpi="62.02">
@@ -50,6 +50,46 @@
          style="fill-rule:evenodd;stroke:#ff2a2a;stroke-width:1pt;stroke-opacity:1;fill:#ff2a2a;fill-opacity:1"
          transform="scale(0.8) rotate(180) translate(12.5,0)" />
     </marker>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Roughen"
+       id="filter855">
+      <feTurbulence
+         type="fractalNoise"
+         numOctaves="2"
+         seed="1"
+         baseFrequency="0.013 0.012"
+         result="turbulence"
+         id="feTurbulence851" />
+      <feDisplacementMap
+         in="SourceGraphic"
+         in2="turbulence"
+         scale="8.7"
+         yChannelSelector="G"
+         xChannelSelector="R"
+         id="feDisplacementMap853"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix869" />
+      <feTurbulence
+         id="feTurbulence871"
+         type="fractalNoise"
+         numOctaves="2"
+         seed="1"
+         baseFrequency="0.015 0.012"
+         result="turbulence"
+         in="fbSourceGraphic" />
+      <feDisplacementMap
+         in2="turbulence"
+         id="feDisplacementMap873"
+         in="fbSourceGraphic"
+         scale="8.7"
+         yChannelSelector="G"
+         xChannelSelector="R" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -59,8 +99,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="400"
-     inkscape:cy="737.14286"
+     inkscape:cx="-172.76177"
+     inkscape:cy="677.93598"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -77,7 +117,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -86,13 +126,14 @@
      inkscape:groupmode="layer"
      id="layer1">
     <image
-       y="-15.787915"
-       x="-92.780556"
-       id="image945"
+       sodipodi:absref="/home/Robin/tmp/gdoc-markdown-format-code/meta/screenshots/./2 - during - pre edit.png"
        xlink:href="./2 - during - pre edit.png"
-       preserveAspectRatio="none"
+       width="524.22778"
        height="327.73059"
-       width="524.22778" />
+       preserveAspectRatio="none"
+       id="image945"
+       x="-92.780556"
+       y="-15.787915" />
     <g
        id="g973"
        transform="translate(-42.333333,-12.85119)">
@@ -192,5 +233,17 @@
        id="path1273"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50.79999924px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;filter:url(#filter855)"
+       x="94.494087"
+       y="187.3869"
+       id="text849"
+       transform="matrix(1.9861086,-0.57370996,0.56038518,2.033334,-208.38812,-121.62268)"><tspan
+         sodipodi:role="line"
+         id="tspan847"
+         x="94.494087"
+         y="187.3869"
+         style="font-size:50.79999924px;stroke-width:0.26458332">EAP</tspan></text>
   </g>
 </svg>
